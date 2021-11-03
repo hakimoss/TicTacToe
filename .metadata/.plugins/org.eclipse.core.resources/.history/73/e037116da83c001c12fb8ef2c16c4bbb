@@ -1,0 +1,48 @@
+package com.hakimos.tictactoe;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.Socket;
+import java.util.Scanner;
+
+import javax.swing.JFrame;
+
+public class TicTacToe {
+	
+	private String ip = "localhost";
+	private int port =  22222;
+	private Scanner scanner = new Scanner(System.in);
+	private JFrame frame;
+	private final int WIDTH = 506;
+	private final int HEIGHT = 527;
+	private Thread thread;
+	
+	private Painter painter;
+	private Socket socket;
+	private DataOutputStream dos;
+	private DataInputStream dis;
+	
+	private ServerSocket serverSocket;
+	
+	private BufferedImage board;
+	private BufferedImage redX;
+	private BufferedImage blueX;
+	private BufferedImage redCircle;
+	private BufferedImage blueCircle;
+
+	
+	
+	public TicTacToe() {
+		
+	}
+	
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		TicTacToe ticTacToe = new TicTacToe();
+	}
+	
+	public class Painter {
+		
+	}
+
+}

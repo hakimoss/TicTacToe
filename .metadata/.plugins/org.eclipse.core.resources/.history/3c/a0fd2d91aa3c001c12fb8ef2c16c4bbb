@@ -1,0 +1,5 @@
+module TicTacToe {
+	java.awt.image.BufferedImage;
+
+	requires java.desktop;
+}
